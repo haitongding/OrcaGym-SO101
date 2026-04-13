@@ -8,13 +8,13 @@ SO101 主臂遥操作仿真数据采集脚本
   - 数据保存为 LeRobot 数据集格式（兼容 LeRobot 训练流程）
 
 实时相机监控请另开终端运行：
-    python examples/so101/so101_camera_monitor.py
+    python examples/so101/camera_monitor.py
 
 运行步骤：
   1. 连接主臂 USB-TTL 串口（默认 /dev/ttyACM1）
   2. 启动 OrcaStudio 并运行 SO101 场景
   3. conda activate so101
-  4. （可选）另开终端：python examples/so101/so101_camera_monitor.py
+  4. （可选）另开终端：python examples/so101/camera_monitor.py
   5. python examples/so101/so101_leader_sim_record.py \\
          --repo_id your_name/so101_sim_dataset \\
          --task "pick up the cube"

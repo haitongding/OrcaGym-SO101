@@ -61,7 +61,7 @@ sudo usermod -aG dialout $USER
 ```bash
 conda activate so101
 cd OrcaGym-SO101
-python examples/so101/so101_camera_monitor.py
+python examples/so101/camera_monitor.py
 ```
 
 **终端 2**：运行采集脚本：

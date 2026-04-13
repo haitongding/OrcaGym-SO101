@@ -5,7 +5,7 @@
 | `so101_leader_teleoperation.py` | 物理主臂 → 仿真从臂实时遥操作 | 见下方 |
 | `so101_leader_sim_record.py` | 遥操作同时采集 LeRobot 格式数据集 | [数据采集说明](README_record.md) |
 | `so101_sim_inference_client.py` | pi0.5 模型推理，在仿真中执行任务 | [推理说明](README_inference.md) |
-| `so101_camera_monitor.py` | 相机图像实时预览（辅助工具） | — |
+| `camera_monitor.py` | 相机图像实时预览（辅助工具，需另开终端） | — |
 
 ---
 
