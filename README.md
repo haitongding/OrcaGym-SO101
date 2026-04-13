@@ -1,12 +1,12 @@
 # OrcaGym-SO101
 
-SO101 单臂机器人仿真平台，基于 OrcaGym + MuJoCo，支持物理主臂遥操作、数据采集和 pi0.5 模型推理。
+SO101 单臂机器人仿真平台，基于 OrcaGym + OrcaStudio，支持物理主臂遥操作、数据采集和 pi0.5 模型推理。
 
 ```
 物理主臂（SO101 Leader）
         │ USB 串口
         ▼
-[OrcaGym 仿真环境]  ──  MuJoCo 物理引擎（OrcaStudio gRPC）
+[OrcaGym 仿真环境]  ──  OrcaStudio（gRPC）
         │
         ├── 遥操作    →  so101_leader_teleoperation.py
         ├── 数据采集  →  so101_leader_sim_record.py  →  LeRobot 数据集
@@ -81,7 +81,7 @@ python examples/so101/so101_sim_inference_client.py \
 
 | 内容 | 放置位置 | 说明 |
 |------|----------|------|
-| MuJoCo 场景文件 | `assets/so101/` | [查看说明](assets/so101/README.md) |
+| 仿真场景文件 | `assets/so101/` | [查看说明](assets/so101/README.md) |
 | pi0.5 模型权重 | `models/pi05_h7_lora/` | [查看说明](models/pi05_h7_lora/README.md) |
 | openpi 定制配置 | `openpi_patches/` | [查看说明](openpi_patches/README.md) |
 
@@ -100,7 +100,7 @@ OrcaGym-SO101/
 │   └── README_inference.md             # 模型推理说明
 ├── envs/so101/                         # SO101 环境实现
 ├── orca_gym/                           # OrcaGym 核心框架
-├── assets/so101/                       # 放置 MuJoCo XML 场景文件（不进 git）
+├── assets/so101/                       # 放置仿真场景文件（不进 git）
 ├── models/pi05_h7_lora/                # 放置 pi0.5 模型权重（不进 git）
 ├── lerobot/                            # LeRobot 源码
 ├── openpi/packages/openpi-client/      # openpi 客户端源码
@@ -117,6 +117,5 @@ OrcaGym-SO101/
 | 组件 | 说明 |
 |------|------|
 | Python 3.10 | conda 环境 |
-| MuJoCo 3.3.3 | 物理引擎 |
 | OrcaStudio | 仿真平台（联系松应科技获取） |
 | openpi 服务器 | 推理时需要，需单独安装 uv 环境 |

@@ -23,7 +23,7 @@ serve_policy.py（策略服务器）  ←WebSocket:8000→  so101_sim_inference_
 
 ### 场景文件
 
-将 SO101 MuJoCo 场景文件放入 `assets/so101/`，参考 [assets/so101/README.md](../../assets/so101/README.md)。
+将 SO101 场景文件放入 `assets/so101/`，参考 [assets/so101/README.md](../../assets/so101/README.md)。
 
 ### 模型权重
 

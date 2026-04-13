@@ -2,7 +2,7 @@
 
 运行仿真脚本需要两类文件：
 1. **OrcaStudio 场景文件**（Assets + Levels）：放入 OrcaStudio 安装目录
-2. **MuJoCo XML 文件**（so101_new_calib.xml + assets/）：放入本目录
+2. **机械臂模型文件**（so101_new_calib.xml + assets/）：放入本目录
 
 ---
 
@@ -20,13 +20,13 @@ OrcaSim 安装目录/
 
 ---
 
-## 二、MuJoCo XML 文件
+## 二、机械臂模型文件
 
 将以下文件放入本目录（`assets/so101/`）：
 
 ```
 assets/so101/
-├── so101_new_calib.xml     ← SO101 机械臂 MuJoCo 模型（必需）
+├── so101_new_calib.xml     ← SO101 机械臂模型文件（必需）
 └── assets/                 ← 网格 .stl 文件目录（必需，和 xml 配套）
     ├── base_so101_v2.stl
     ├── upper_arm_so101_v1.stl
