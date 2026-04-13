@@ -23,13 +23,11 @@ models/**/*.pth
 models/**/params/
 !models/**/README.md
 
-# 场景资产（不进 git，见 assets/ 目录下的 README）
-assets/**/*.stl
+# 场景资产（assets/so101/ 下的 xml 和 stl 已进 git，其他大文件排除）
 assets/**/*.obj
 assets/**/*.dae
 assets/**/*.png
 assets/**/*.jpg
-assets/**/*.xml
 !assets/**/README.md
 
 # 数据集（LeRobot 格式，体积大）
