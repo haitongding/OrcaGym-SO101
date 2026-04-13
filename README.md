@@ -84,7 +84,7 @@ python examples/so101/so101_sim_inference_client.py \
 | 机械臂模型文件（已含） | `assets/so101/` | [查看说明](assets/so101/README.md) |
 | OrcaStudio Levels（已含） | `Levels/` → OrcaSim 安装目录 | [查看说明](assets/so101/README.md) |
 | OrcaStudio Assets（需单独获取，2.5GB） | → OrcaSim 安装目录 | [查看说明](assets/so101/README.md) |
-| pi0.5 模型权重 | `models/pi05_h7_lora/` | [查看说明](models/pi05_h7_lora/README.md) |
+| pi0.5 模型权重 | `models/h11_lora/` | [查看说明](models/h11_lora/README.md) |
 | openpi 定制配置 | `openpi_patches/` | [查看说明](openpi_patches/README.md) |
 
 ---
