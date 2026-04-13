@@ -33,9 +33,9 @@ serve_policy.py（策略服务器）  ←WebSocket:8000→  so101_sim_inference_
 
 ```
 models/
-└── pi05_h7_lora/
-    └── h7_lora/
-        └── 4000/          ← checkpoint 目录（包含 params.msgpack 等）
+└── h11_lora/
+    ├── 5000/              ← checkpoint 目录（包含 params、assets 等）
+    └── 6000/
 ```
 
 ### openpi 推理环境
@@ -72,10 +72,10 @@ cd openpi    # 进入 openpi 目录
 
 uv run scripts/serve_policy.py policy:checkpoint \
     --policy.config=pi05_h7_lora \
-    --policy.dir=../OrcaGym-SO101/models/pi05_h7_lora/h7_lora/4000
+    --policy.dir=../OrcaGym-SO101/models/h11_lora/6000
 ```
 
-> 将 `4000` 替换为你的实际 checkpoint 步数（目录名）。  
+> 将 `6000` 替换为你要使用的 checkpoint 步数（目录名）。  
 > 服务器启动成功后会输出 `Serving on port 8000`。
 
 关闭服务器：

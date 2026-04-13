@@ -64,7 +64,7 @@ python examples/so101/so101_leader_sim_record.py \
 cd openpi
 uv run scripts/serve_policy.py policy:checkpoint \
     --policy.config=pi05_h7_lora \
-    --policy.dir=../OrcaGym-SO101/models/pi05_h7_lora/h7_lora/4000
+    --policy.dir=../OrcaGym-SO101/models/h11_lora/6000
 
 # 终端 2：推理客户端（conda so101 环境）
 conda activate so101

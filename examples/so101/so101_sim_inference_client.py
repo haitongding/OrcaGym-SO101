@@ -497,10 +497,10 @@ def run_one_episode(
     _log(f">>> 任务：{task}")
     _log(">>> 键盘：Page Down=提前结束当前 chunk  Esc/Ctrl+C=停止")
 
-    # 获取初始 obs，重置并随机化场景
+    # 获取初始 obs，重置场景
     obs, _ = env.reset()
-    with contextlib.suppress(Exception):
-        randomize_block(env)
+    # with contextlib.suppress(Exception):
+    #     randomize_block(env)
     for _ in range(5):
         obs, _, _, _, _ = env.step(np.zeros(_ACTION_DIM, dtype=np.float32))
     env.render()

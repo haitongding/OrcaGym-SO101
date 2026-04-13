@@ -681,9 +681,9 @@ def reset_loop(env, events: dict, reset_time_s: float) -> None:
     with open(os.devnull, "w") as _null, \
          contextlib.redirect_stdout(_null), \
          contextlib.redirect_stderr(_null):
-        # 先重置仿真场景（物体归位），再将 block 随机放置到中心 ±3.5cm 区域
+        # 重置仿真场景（物体归位）
         env.reset()
-        _randomize_block_position(env)
+        # _randomize_block_position(env)
 
         while (time.perf_counter() - start_t) < reset_time_s:
             loop_start = time.perf_counter()
